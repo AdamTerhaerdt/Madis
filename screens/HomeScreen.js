@@ -1,18 +1,9 @@
 import { View, Text, SafeAreaView, ImageBackground, ScrollView } from 'react-native'
 import React, { useLayoutEffect, useEffect } from 'react'
 import FeaturedRow from '../components/FeaturedRow'
-import { useNavigation } from '@react-navigation/native'
 import { Ionicons } from '@expo/vector-icons';
 
-const HomeScreen = () => {
-  const navigation = useNavigation();
-
-  useLayoutEffect(() => {
-    navigation.setOptions({
-      headerShown: false,
-    })
-  }, [navigation])
-
+const HomeScreen = ({navigation}) => {
   return (
   <ImageBackground source={require('../assets/main3.png')} style={{width: '100%', height: '100%'}}>
     <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
