@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Iconly } from 'react-iconly';
 import HomeScreen from './screens/HomeScreen';
 
 const Tab = createBottomTabNavigator();
@@ -18,7 +17,7 @@ const TabNavigator = () => {
                     borderTopColor: "transparent",
                     position: 'absolute',
                     borderRadius: 15,
-                    bottom: 10,
+                    bottom: 34,
                     left: 10,
                     right: 10,
                     elevation: 0,

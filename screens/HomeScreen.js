@@ -16,12 +16,13 @@ const HomeScreen = () => {
   return (
   <ImageBackground source={require('../assets/main3.png')} style={{width: '100%', height: '100%'}}>
     <View style={{ flex: 1, backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-      <SafeAreaView>
-        <ScrollView
+      <SafeAreaView edges={['right', 'top', 'left']}>
+      <ScrollView
           contentContainerStyle={{
             paddingBottom: 100,
           }}
-        >
+      >
+        <SafeAreaView>
           {/* Header */}
           <View className="flex-row items-center justify-between px-5">
             <View>
@@ -32,8 +33,10 @@ const HomeScreen = () => {
               <Ionicons name="notifications-outline" size={32} color="#D9AD1E"/>
             </View>
           </View>
-          
+
           {/* Body */}
+          
+
           {/* Featured */}
           <FeaturedRow
             id="123"
@@ -51,10 +54,11 @@ const HomeScreen = () => {
           {/* Popular */}
           <FeaturedRow
             id="890"
-            title="Featured"
+            title="Our Favorites"
             description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum."
           />
-        </ScrollView>
+        </SafeAreaView>
+      </ScrollView>
       </SafeAreaView>
     </View>
   </ImageBackground>
