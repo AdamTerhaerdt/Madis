@@ -36,6 +36,14 @@ const HomeScreen = () => {
 
           {/* Body */}
           
+          {/* Points */}
+          <View className="flex-col items-center justify-between px-5 mt-5">
+            <View className="flex-row px-4">
+              <Text className="text-5xl font-medium text-white">70</Text>
+              <Ionicons name="cafe-outline" color={'#D9AD1E'} size={38}/>
+            </View>
+            <Text className="text-5xl font-medium text-white">Points</Text>
+          </View>
 
           {/* Featured */}
           <FeaturedRow
